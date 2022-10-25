@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #606060;
+    padding: 0;
+}
+
+.text-main{
+    color:#00a461;
+}
+
+h2{
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+p{
+    margin-bottom:1rem;
+}

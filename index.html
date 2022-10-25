@@ -18,23 +18,23 @@
             <img src="./assets/img/MedicalLogo3.webp" alt="">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item active sidebar-element" data-target="#home">
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active sidebar-element" data-target="#">
                         <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active sidebar-element" data-target="#home">
                       <a class="nav-link disabled" href="#">Mi perfil</a>
                     </li>
                   </ul>
             </div>
         </div>
       </nav>
-      <div class="products-container">
+      <section class="products-container body-section" id="products-section">
           <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
                     <div class="product-card">
                         <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80" alt="">
                         <div class="product-information">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
                     <div class="product-card">
                         <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80" alt="">
                         <div class="product-information">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
                     <div class="product-card">
                         <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80" alt="">
                         <div class="product-information">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
                     <div class="product-card">
                         <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80" alt="">
                         <div class="product-information">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
+                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
                     <div class="product-card">
                         <img src="https://images.unsplash.com/photo-1584634731339-252c581abfc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80" alt="">
                         <div class="product-information">
@@ -101,8 +101,8 @@
                 </div>
             </div>
         </div>
-      </div>
-      <div class="container d-none">
+      </section>
+      <section class="container body-section d-none" id="single-product-section">
          <div class="single-product-container">
                 <div class="row">
                     <div class="col-12 col-md-6">
@@ -125,6 +125,8 @@
                     </div>
                 </div>
             </div>
-      </div>
+      </section>
+      <script src="./js/jquery/jquery-3.6.1.min.js"></script>
+      <script src="./js/home.js"></script>
 </body>
 </html>
