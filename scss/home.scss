@@ -1,4 +1,4 @@
-$mainGreen:#00a461;
+$mainGreen:#019c7c;
 $lightGreen:#e5e9eb;
 
 body{
@@ -25,7 +25,17 @@ body{
 
 .navbar{
     img{
-        height: 80px;
+        height: 90px;
+    }
+
+    li a{
+        color:$mainGreen !important;
+        margin: 0 .5rem;
+        font-size: 1.15rem;
+        transition:all .15s ease-in-out;
+        &:hover{
+            filter: brightness(1.15);
+        }
     }
 }
 
@@ -35,6 +45,8 @@ body{
         background:#fff;
         border-radius: .5rem;
         margin-bottom:1.5rem;
+        cursor:pointer;
+        transition:all .15s ease-in-out;
 
         .product-information{
             padding:1rem;
@@ -63,6 +75,10 @@ body{
                 color: $mainGreen;
                 margin-right: .5rem;
             }
+        }
+
+        &:hover{
+            box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
         }
     }
 }
@@ -97,6 +113,13 @@ body{
                 color: $mainGreen;
                 margin-right: .5rem;
             }
+        }
+    }
+
+    .fa-arrow-left{
+        font-size: 1.5rem;
+        &:hover{
+            color:$mainGreen;
         }
     }
 
