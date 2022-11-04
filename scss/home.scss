@@ -41,6 +41,21 @@ body{
 
 .products-container{
     margin-top:2.5rem;
+
+    .products-filter{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:1.5rem;
+        input{
+            border:1px solid #ededed;
+            border-radius:.5rem;
+            padding:.5rem;
+            padding-left: 1.5rem;
+            width: 15rem;
+        }
+    }
+
     .product-card{
         background:#fff;
         border-radius: .5rem;
@@ -62,12 +77,12 @@ body{
         .nombre{
             font-size: 1.15rem;
             color: $mainGreen;
+            line-height: 1.75rem;
         }
         .descripcion{
             margin-bottom: .25rem;
-            max-height: 3rem;
+            max-height: 9rem;
             overflow:hidden;
-            
         }
 
         .fecha{
