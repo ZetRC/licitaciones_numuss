@@ -1,0 +1,73 @@
+body {
+  background: #e5e9eb;
+  color: #606060;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #019c7c;
+}
+
+.login-box {
+  border: 1px solid #dcdcdc;
+  padding: 8rem 5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.login-box h2 {
+  margin-bottom: 1.5rem;
+}
+.login-box .login-form button {
+  width: 100%;
+}
+.login-box .login-form .input-icon {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.login-box .login-form .input-icon input {
+  background-color: #f5f5f5;
+  border: none;
+}
+.login-box .login-form .input-icon i,
+.login-box .login-form .input-icon svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.login-box .login-form .form-check {
+  margin-bottom: 1.5rem;
+}
+.login-box img {
+  padding-right: 2.5rem;
+}
+
+.condiciones {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.condiciones a {
+  padding-left: 1rem;
+}
+
+.btn-main {
+  background: #019c7c !important;
+  color: white !important;
+}
+
+.text-main {
+  color: #019c7c !important;
+}
+
+/*# sourceMappingURL=login.css.map */

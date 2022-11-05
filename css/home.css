@@ -57,7 +57,7 @@ body {
   transition: all 0.15s ease-in-out;
 }
 .products-container .product-card .product-information {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .products-container .product-card img {
   width: 100%;
@@ -101,6 +101,12 @@ body {
 }
 .single-product-container .product-info {
   padding: 1.5rem;
+}
+.single-product-container .product-info .prioridad i,
+.single-product-container .product-info .prioridad svg {
+  color: #019c7c;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
 }
 .single-product-container .product-info .nombre,
 .single-product-container .product-info .descripcion,

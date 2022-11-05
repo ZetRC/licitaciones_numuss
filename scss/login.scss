@@ -1,0 +1,80 @@
+$mainGreen:#019c7c;
+$lightGreen:#e5e9eb;
+
+body{
+    background:$lightGreen;
+    color: #606060;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+a{
+    color: $mainGreen;
+}
+
+.login-box{
+    border:1px solid #dcdcdc;
+    padding: 8rem 5rem;   
+    border-radius:.5rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top:10rem;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    h2{
+        margin-bottom:1.5rem;
+    }
+
+    .login-form{       
+        button{
+            width: 100%;
+        }
+
+        .input-icon{
+            margin-bottom:1.5rem;
+            position:relative;
+            input{
+                background-color: #f5f5f5;    
+                border: none;
+            }
+            i,
+            svg{
+                position:absolute;
+                top:50%;
+                transform: translateY(-50%);
+                display: none;
+            }
+        }
+
+        .form-check{
+            margin-bottom:1.5rem;
+        }
+    }
+
+    img{
+        padding-right: 2.5rem;
+    }
+}
+
+.condiciones{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    a{
+        padding-left: 1rem;
+    }
+}
+
+.btn-main{
+    background:$mainGreen !important;
+    color:white !important;
+}
+
+.text-main{
+    color:$mainGreen !important;
+}
