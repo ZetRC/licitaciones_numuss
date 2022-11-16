@@ -9,8 +9,24 @@ body{
     padding: 0;
 }
 
+section{
+    margin:0 auto;
+}
+
+.body-section{
+    margin-top:3.5rem;
+}
+
 .text-main{
     color: $mainGreen;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.box-shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .btn-main{
@@ -24,11 +40,35 @@ body{
 }
 
 .navbar{
-    img{
-        height: 90px;
+    display: flex;
+    border-bottom: 1px solid #ededed;
+    i,
+    svg{
+        font-size: 1.75rem;
+        color:$mainGreen;
+        margin-left: .5rem;
+        cursor: pointer;
     }
 
-    li a{
+    .profile-container{
+        display: flex;
+        align-items: center;
+        float: right;
+        cursor: pointer;
+        img{
+            height: 60px;
+            border-radius:999px;
+            aspect-ratio:1;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        .profile-name{
+            font-size: 1.15rem;
+            color: $mainGreen;
+        }
+    }
+
+    /* li a{
         color:$mainGreen !important;
         margin: 0 .5rem;
         font-size: 1.15rem;
@@ -36,66 +76,187 @@ body{
         &:hover{
             filter: brightness(1.15);
         }
+    } */
+}
+
+.sidebar{
+    background:#f8f9fa;
+    color:#848484;
+    min-height: 100vh;
+    width: 14rem;
+    min-width: 14rem;
+  
+    .sidebar-logo{
+      max-width:100%;
+      width:6.5rem;
+      display:block;
+      margin:0 auto;
+      margin-top: 1rem;
+    }
+  
+    .sidebar-element,
+    .section-label{
+      padding-left: 1.5rem !important;
+      white-space: nowrap;
+    }
+    .section-label{
+      font-size:.1.15rem;
+      color:rgb(36, 36, 36);
+      font-weight:bold;
+      margin-bottom:1.5rem;
+      margin-top:2.5rem;
+    }
+  
+  
+    .sidebar-element{
+      display:flex;
+      align-items:center;
+      padding: 11px;
+      margin-bottom:.5rem;
+      cursor:pointer;
+      transition:all .15s ease;
+      font-size: 1.1rem;
+      i,
+      svg{
+        margin-right:1rem;
+      }
+    }
+  
+    .subelement{
+      font-size: .85rem;
+      padding:5px;
+      i,
+      svg{
+        display: none;
+      }
+    }
+  
+    @mixin sidebar-children{
+      align-items:center;
+      padding: 1rem 1.5rem;
+      transition: all .3s ease;
+      width: 200px;
+      color: #7b8793;
+    }
+  
+    .sidebar-section{
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+      .section-header{
+          @include sidebar-children();
+          display:flex;
+          justify-content:space-between;
+          cursor: pointer;
+          span{
+              i,
+              svg{
+                  padding-right: .8rem;
+              }
+          }
+          .fa-chevron-right{
+              font-size: .7rem;
+          }
+          .rotate{
+              transform: rotate(90deg);
+          }
+      }
+      .section-content{
+          display: none;
+      }
+  }
+  
+    .selected-item{
+      //border-left: 5px solid $mainGreen ;
+      color: $mainGreen;
+      background-color: #019c7c24;
+      border-radius:.5rem;
+      margin:0 auto;
+      width:90%;
+      font-weight: 500;
     }
 }
 
+.searchbar-box{
+    width: 100%;
+    text-align:center;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+
+    h1{
+        margin-bottom:1.5rem;
+    }
+
+    .searchbar-container{
+        margin-top: 2.5rem;
+        display:inline-flex;
+        justify-content:center;
+        position:relative;
+        width: 100%;
+        .searchbar{
+            border:1px solid #dcdcdc;
+            height: 3.5rem;
+            width:100%;
+            max-width:1280px;
+            padding: 0 1.5rem;
+            border-radius: 999px;
+        }
+        button{
+            position:absolute;
+            right:.5rem;
+            top:50%;
+            transform:translateY(-50%);
+            height: 85%;
+            border-radius: 999px;
+            aspect-ratio: 1;
+        }
+    }
+}
+
+
 .products-container{
     margin-top:2.5rem;
+}
 
-    .products-filter{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        margin-bottom:1.5rem;
-        input{
-            border:1px solid #ededed;
-            border-radius:.5rem;
-            padding:.5rem;
-            padding-left: 1.5rem;
-            width: 15rem;
+.product-card{
+    background:#fff;
+    border-radius: .5rem;
+    margin-bottom:1.5rem;
+    cursor:pointer;
+    transition:all .15s ease-in-out;
+
+    .product-information{
+        padding:1.5rem;
+    }
+
+    img{
+        width: 100%;
+        border-radius:.5rem .5rem 0 0;
+        margin-bottom:.5rem;
+        min-height: 15rem;
+        object-fit:cover;
+    }
+
+    .nombre{
+        font-size: 1.15rem;
+        color: $mainGreen;
+        line-height: 1.75rem;
+    }
+    .descripcion{
+        margin-bottom: .25rem;
+        max-height: 9rem;
+        overflow:hidden;
+    }
+
+    .fecha{
+        i,svg{
+            color: $mainGreen;
+            margin-right: .5rem;
         }
     }
 
-    .product-card{
-        background:#fff;
-        border-radius: .5rem;
-        margin-bottom:1.5rem;
-        cursor:pointer;
-        transition:all .15s ease-in-out;
-
-        .product-information{
-            padding:1.5rem;
-        }
-
-        img{
-            width: 100%;
-            border-radius:.5rem .5rem 0 0;
-            margin-bottom:.5rem;
-            min-height: 15rem;
-            object-fit:cover;
-        }
-
-        .nombre{
-            font-size: 1.15rem;
-            color: $mainGreen;
-            line-height: 1.75rem;
-        }
-        .descripcion{
-            margin-bottom: .25rem;
-            max-height: 9rem;
-            overflow:hidden;
-        }
-
-        .fecha{
-            i,svg{
-                color: $mainGreen;
-                margin-right: .5rem;
-            }
-        }
-
-        &:hover{
-            box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
-        }
+    &:hover{
+        box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
     }
 }
 
@@ -148,4 +309,21 @@ body{
         }
     }
 
+}
+
+#mis-licitaciones-section{
+    width: 100%;
+    .products-filter{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:1.5rem;
+        input{
+            border:1px solid #ededed;
+            border-radius:.5rem;
+            padding:.5rem;
+            padding-left: 1.5rem;
+            width: 15rem;
+        }
+    }   
 }

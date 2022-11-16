@@ -4,138 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento</title>
     <link rel="stylesheet" href="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container">
-            <img src="./assets/img/companydefault.webp" alt="">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active sidebar-element" data-target="#home">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active sidebar-element" data-target="#">
-                        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active sidebar-element" data-target="#home">
-                      <a class="nav-link disabled" href="#">Mi perfil</a>
-                    </li>
-                  </ul>
-            </div>
+<body class="d-flex">
+  <div class="sidebar" id="sidebar">
+    <img 
+    src="./assets/img/companydefault.webp" 
+    alt=""
+    class="sidebar-logo mb-4 pb-4"
+          >
+        <div class="sidebar-element selected-item" data-target="#products-section">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Buscar licitación
         </div>
-      </nav>
-      <section class="products-container body-section" id="products-section">
+        <div class="sidebar-element" data-target="#mis-licitaciones-section">
+          <i class="fa-solid fa-list-check"></i>
+          Mis licitaciones
+        </div>
+        <div class="sidebar-element" data-target="#perfil-paciente-view">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          Salir
+        </div>
+      </div>
+      <div class="w-100">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <i class="fa-solid fa-bars"></i>
+            <div class="flex-1"></div>
+            <div class="profile-container">
+              <img src="https://images.unsplash.com/photo-1450297350677-623de575f31c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+              <div class="profile-name">Ana Rodriguez</div>
+            </div>
+          </nav>
+        <section class="products-container body-section" id="products-section">
+            <div class="container">
+              <div class="searchbar-box">
+                <h1 class="text-main mb-3">Encuentra una licitación hoy mismo!</h1>
+                  <div class="searchbar-container">
+                    <input
+                      type="text"
+                      placeholder="Busca una licitación en específico"
+                      class="searchbar"
+                    >
+                    <button class="btn btn-main">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
+                      <div class="product-card">
+                          <div class="product-information">
+                              <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                              <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                              <small class="fecha">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                  <span>01/01/2020 - 01/01/2023</span>
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
+                      <div class="product-card">
+                          <div class="product-information">
+                              <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                              <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                              <small class="fecha">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                  <span>01/01/2020 - 01/01/2023</span>
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
+                      <div class="product-card">
+                          
+                          <div class="product-information">
+                              <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                              <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                              <small class="fecha">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                  <span>01/01/2020 - 01/01/2023</span>
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
+                      <div class="product-card">
+                          
+                          <div class="product-information">
+                              <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                              <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                              <small class="fecha">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                  <span>01/01/2020 - 01/01/2023</span>
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
+                      <div class="product-card">
+                          <div class="product-information">
+                              <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                              <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                              <small class="fecha">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                  <span>01/01/2020 - 01/01/2023</span>
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section class="body-section d-none" id="mis-licitaciones-section">
           <div class="container">
             <div class="products-filter">
-                <h5>Licitaciones disponibles:</h5>
-                <input type="text" placeholder="Buscar licitacion">
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
-                    <div class="product-card">
-                        
-                        <div class="product-information">
-                            <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
-                            <small class="fecha">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>01/01/2020 - 01/01/2023</span>
-                            </small>
-                        </div>
-                    </div>
+                <h5>Mis licitaciones:</h5>
+                <button class="btn btn-main mr-2" type="button" data-toggle="modal" data-target="#modal-crear-licitacion">
+                  <i class="fa-solid fa-plus"></i>
+                  <span>Crear nueva licitación</span>
+                </button>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="product-card mb-4">
+                      <div class="product-information">
+                          <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                          <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                          <small class="fecha">
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <span>01/01/2020 - 01/01/2023</span>
+                          </small>
+                          <button class="btn btn-main mt-4 d-block" type="button" data-toggle="modal" data-target="#modal-crear-licitacion">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Editar</span>
+                          </button>
+                      </div>
+                  </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
-                    <div class="product-card">
-                        
-                        <div class="product-information">
-                            <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
-                            <small class="fecha">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>01/01/2020 - 01/01/2023</span>
-                            </small>
-                        </div>
-                    </div>
+                <div class="col-12">
+                  <div class="product-card mb-4">
+                      <div class="product-information">
+                          <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
+                          <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
+                          <small class="fecha">
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <span>01/01/2020 - 01/01/2023</span>
+                          </small>
+                          <button class="btn btn-main mt-4 d-block" type="button" data-toggle="modal" data-target="#modal-crear-licitacion">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Editar</span>
+                          </button>
+                      </div>
+                  </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
-                    <div class="product-card">
-                        
-                        <div class="product-information">
-                            <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
-                            <small class="fecha">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>01/01/2020 - 01/01/2023</span>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
-                    <div class="product-card">
-                        
-                        <div class="product-information">
-                            <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
-                            <small class="fecha">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>01/01/2020 - 01/01/2023</span>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 sidebar-element" data-target="#single-product-section">
-                    <div class="product-card">
-                        <div class="product-information">
-                            <h6 class="nombre">100000 Piezas Cubrebocas Plisado Tricapa</h6>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus adipisci velit reprehenderit, facilis veritatis esse iste! Laborum amet quidem blanditiis tempora sed sit nihil minus aperiam ullam debitis quo, hic quas eligendi libero perferendis expedita ea asperiores incidunt! Quod.</p>
-                            <small class="fecha">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>01/01/2020 - 01/01/2023</span>
-                            </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-      <section class="container body-section d-none" id="single-product-section">
-         <div class="single-product-container">
-             <i class="fa-solid fa-arrow-left sidebar-element" id="regresar-grid-btn" data-target="#products-section"></i>
-                <div class="row">
-                    <!-- <div class="col-12 col-md-6">
-                        <img src="https://images.unsplash.com/photo-1589091683318-a10f065d844a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
-                    </div> -->
-                    <div class="col-12">
-                        <div class="product-info">
-                          <h3 class="nombre">Tapabocas 100000 Piezas Cubrebocas Plisado Tricapa Termosellado</h3>
-                          <h6 class="fecha">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <span>Desde 01/01/2020 - Hasta 01/01/2023</span>
-                          </h6>
-                          <div class="prioridad">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            Prioridad alta
+              </div>
+          </div>
+        </section>
+        <section class="container body-section d-none" id="single-product-section">
+           <div class="single-product-container">
+               <i class="fa-solid fa-arrow-left sidebar-element" id="regresar-grid-btn" data-target="#products-section"></i>
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="product-info">
+                            <h3 class="nombre">Tapabocas 100000 Piezas Cubrebocas Plisado Tricapa Termosellado</h3>
+                            <h6 class="fecha">
+                              <i class="fa-solid fa-calendar-days"></i>
+                              <span>Desde 01/01/2020 - Hasta 01/01/2023</span>
+                            </h6>
+                            <div class="prioridad">
+                              <i class="fa-solid fa-circle-exclamation"></i>
+                              Prioridad alta
+                            </div>
+                              <p class="descripcion d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque id aut doloribus non, qui vitae nisi modi! Ex necessitatibus, sint dolores inventore quibusdam aut assumenda non alias, maxime ullam tempora. Eligendi aspernatur magni nisi doloremque veniam. Eveniet repellendus totam aut sed excepturi, autem mollitia eligendi assumenda omnis, distinctio explicabo.</p>
+                              <p class="descripcion d-block">Lorem ipsum . Quis atque id aut doloribus non, qui vitae nisi modi! Ex necessitatibus, sint dolores inventore quibusdam aut assumenda non alias, maxime ullam tempora. Eligendi aspernatur magni nisi doloremque veniam. Eveniet repellendus totam aut sed excepturi, autem mollitia eligendi assumenda omnis, distinctio explicabo.</p>
+                              <p class="descripcion d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit vitae nisi modi! Ex necessitatibus, sint dolores inventore quibusdam aut assumenda non alias, maxime ullam tempora. Eligendi aspernatur magni nisi doloremque veniam. Eveniet repellendus totam aut sed excepturi, autem mollitia eligendi assumenda omnis, distinctio explicabo.</p>
+                              <button class="btn btn-main mr-2" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                  <i class="fa-solid fa-cart-shopping mr-2"></i>
+                                  <span>Ingresar a licitación</span>
+                              </button>
+                              <button class="btn btn-light">Otra opción</button>
                           </div>
-                            <p class="descripcion d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque id aut doloribus non, qui vitae nisi modi! Ex necessitatibus, sint dolores inventore quibusdam aut assumenda non alias, maxime ullam tempora. Eligendi aspernatur magni nisi doloremque veniam. Eveniet repellendus totam aut sed excepturi, autem mollitia eligendi assumenda omnis, distinctio explicabo.</p>
-                            <p class="descripcion d-block">Lorem ipsum . Quis atque id aut doloribus non, qui vitae nisi modi! Ex necessitatibus, sint dolores inventore quibusdam aut assumenda non alias, maxime ullam tempora. Eligendi aspernatur magni nisi doloremque veniam. Eveniet repellendus totam aut sed excepturi, autem mollitia eligendi assumenda omnis, distinctio explicabo.</p>
-                            <p class="descripcion d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit vitae nisi modi! Ex necessitatibus, sint dolores inventore quibusdam aut assumenda non alias, maxime ullam tempora. Eligendi aspernatur magni nisi doloremque veniam. Eveniet repellendus totam aut sed excepturi, autem mollitia eligendi assumenda omnis, distinctio explicabo.</p>
-                            <button class="btn btn-main mr-2" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
-                                <i class="fa-solid fa-cart-shopping mr-2"></i>
-                                <span>Ingresar a licitación</span>
-                            </button>
-                            <button class="btn btn-light">Otra opción</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-      </section>
+                      </div>
+                  </div>
+              </div>
+        </section>
+      </div>
       <!-- Modal datos provedor -->
       <div class="modal fade bd-example-modal-lg" id="modal-datos-provedor" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -168,6 +228,45 @@
                       <div class="form-group col-12">
                         <label for="inputAddress">Anotaciones|</label>
                         <textarea rows="4" class="form-control" placeholder="Ingrese anotaciones o detalles"></textarea>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-main">Guardar y cerrar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal crear licitacion -->
+      <div class="modal fade" id="modal-crear-licitacion" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Crear licitación</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nombre de la licitación</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre de la licitación">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Fecha de finalización</label>
+                        <input type="date" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="form-group col-12">
+                        <label for="inputAddress">Descripción</label>
+                        <textarea rows="4" class="form-control" placeholder="Ingrese una descripción"></textarea>
+                      </div>
+                      <div class="form-group col-12">
+                        <label for="inputAddress">Notas</label>
+                        <textarea rows="4" class="form-control" placeholder="Ingrese notas o detalles"></textarea>
                       </div>
                     </div>
                   </form>
