@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!--  -->
+    <div class="container">
+        <div class="signup-step-container">
+            <!-- Box tipo de usuario -->
+            <div class="box selection-box relative py-5">
+                <h2 class="text'justify">Yo soy un:</h2>
+                <div class="options-container">
+                    <div class="box-option toggle-content" id="provedor-selector" data-show="#formularioProvedor">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                        <span>Provedor</span>
+                        <div class="text-center">Estoy interesado en participar en licitaciones para la venta de productos médicos.</div>
+                        <button class="btn btn-main w-100 rounded-full mt-4 btn-rounded">Siguiente</button>
+                    </div>
+                    <div class="box-option toggle-content" id="licitador-selector" data-show="#formularioLicitador">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Licitador</span>
+                        <div class="text-center">Estoy interesado en encontrar y comprar suministros médicos al mejor postor</div>
+                        <button class="btn btn-main w-100 rounded-full mt-4 btn-rounded">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Formulario para licitador -->
+           <div class="box hidden relative" id="formularioLicitador">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <div class="wizard mt-5">
+                            <div class="wizard-inner">
+                                <div class="connecting-line" style="width:67%;"></div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active" style="width:33%;">
+                                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true" aria-selected="true" class="selected active"><span class="round-tab"><i class="fa-solid fa-address-card"></i></span><h6>paso 1</h6></a>
+                                    </li>
+                                    <li role="presentation" class="disabled" style="width:33%;">
+                                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab"><i class="fa-solid fa-user-pen"></i></span><h6>paso 2</h6></a>
+                                    </li>
+                                    <li role="presentation" class="disabled" style="width:33%;">
+                                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" aria-expanded="false"><span class="round-tab"><i class="fa-solid fa-calendar-day"></i></span><h6>paso 3</h6></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form role="form" action="index.html" class="login-box">
+                                <div class="tab-content" id="main_form">
+                                    <!-- paso 1 -->
+                                    <div class="tab-pane active" role="tabpanel" id="step1">
+                                        <h4 class="text-center mt-4 mb-5">paso 1</h4>
+                                        <ul class="list-inline pull-right mt-3">
+                                            <li><button type="button" class="default-btn prev-step back-selection">Regresar</button></li>
+                                            <li><button type="button" class="default-btn next-step">Siguiente</button></li>
+                                        </ul>
+                                    </div>
+                                    <!-- paso 2 -->
+                                    <div class="tab-pane" role="tabpanel" id="step2">
+                                        <h4 class="text-center mt-4 mb-5">paso 2</h4>
+                                        <ul class="list-inline pull-right mt-3">
+                                            <li><button type="button" class="default-btn prev-step">Regresar</button></li>
+                                            <li><button type="button" class="default-btn next-step">Siguiente</button></li>
+                                        </ul>
+                                    </div>
+                                    <!-- paso 3 -->
+                                    <div class="tab-pane" role="tabpanel" id="step3">
+                                        <h4 class="text-center mt-4 mb-5">paso 3</h4>
+                                         <ul class="list-inline pull-right mt-3">
+                                            <li><button type="button" class="default-btn prev-step">Regresar</button></li>
+                                            <li><button type="button" class="default-btn next-step">Siguiente</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Formulario para provedor -->
+            <div class="box hidden relative" id="formularioProvedor">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <div class="wizard mt-5 doctor-wizard">
+                            <div class="wizard-inner">
+                                <div class="connecting-line" style="width: 67%;"></div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active" style="width:33%;">
+                                        <a href="#step1d" data-toggle="tab" aria-controls="step1d" role="tab" aria-expanded="true"><span class="round-tab"><i class="fa-solid fa-address-card"></i></span><h6>Paso 1</h6></a>
+                                    </li>
+                                    <li role="presentation" style="width:33%;">
+                                        <a href="#step4d" data-toggle="tab" aria-controls="step4d" role="tab"><span class="round-tab"><i class="fa-solid fa-upload"></i></span> <h6>Paso 2</h6></a>
+                                    </li>
+                                    <li role="presentation" style="width:33%;">
+                                        <a href="#step5d" data-toggle="tab" aria-controls="step5d" role="tab"><span class="round-tab"><i class="fa-solid fa-check"></i></span> <h6>Paso 3</h6></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form role="form" action="index.html" class="login-box">
+                                <div class="tab-content" id="main_form">
+                                    <!-- paso 1 -->
+                                    <div class="tab-pane active" role="tabpanel" id="step1d">
+                                        <h4 class="text-center mt-4 mb-5">paso 1 </h4>
+                                        <ul class="list-inline pull-right mt-3">
+                                            <li><button type="button" class="default-btn prev-step back-selection">Regresar</button></li>
+                                            <li><button type="button" class="default-btn next-step">Siguiente</button></li>
+                                        </ul>
+                                    </div>
+                                    <!-- paso 2 -->
+                                    <div class="tab-pane" role="tabpanel" id="step4d">
+                                        <h4 class="text-center mt-4 mb-5">paso 2</h4>
+                                        <ul class="list-inline pull-right mt-3">
+                                            <li><button type="button" class="default-btn prev-step">Regresar</button></li>
+                                            <li><button type="button" class="default-btn next-step">Siguiente</button></li>
+                                        </ul>
+                                    </div>
+                                    <!-- paso 3 -->
+                                    <div class="tab-pane" role="tabpanel" id="step5d">
+                                        <h4 class="text-center mt-4 mb-5">paso 3</h4>
+                                        <ul class="list-inline pull-right">
+                                            <li><button type="button" class="default-btn prev-step">Regresar</button></li>
+                                            <li><button type="button" class="default-btn next-step">Finalizar</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-3"></div>
+            <small class="d-block m-auto w-fit">¿Ya tienes cuenta? <a href="" class="text-main">Inicia sesión</a></small>
+            <small class="d-block m-auto w-fit mt-2">© 2021 companyName.com, inc. Reservados todos los derechos.
+                <a href="" class="text-main mx-2">Condiciones de uso</a>
+                <a href="" class="text-main mx-2">Politica de privacidad</a>
+            </small>
+           </div>
+    </div>
+    <script src="./js/jquery/jquery-3.6.1.min.js"></script> 
+    <script src="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> 
+    <script src="./js/registration.js"></script> 
+    <!--  -->
+</body>
+</html>
