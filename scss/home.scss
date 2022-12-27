@@ -218,13 +218,20 @@ section{
     margin-top:2.5rem;
 }
 
-.product-card{
+.product-card,
+.custom-box{
     background:#fff;
     border-radius: .5rem;
     margin-bottom:1.5rem;
     cursor:pointer;
     transition:all .15s ease-in-out;
+}
 
+.custom-box{
+    padding: 1rem;
+}
+
+.product-card{
     .product-information{
         padding:1.5rem;
     }
@@ -327,3 +334,6 @@ section{
         }
     }   
 }
+
+@import './components/loader';
+@import './components/toggleableTable';

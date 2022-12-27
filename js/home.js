@@ -2,6 +2,7 @@ var home = (function() {
 		
 	var initProperties = function() {
         functions.handleSidebar()
+        functions.handleToggleableTables()
 	};
 	
 	var functions = {	
@@ -27,6 +28,16 @@ var home = (function() {
                 console.log(target)
             })
         },
+        handleToggleableTables : function(){
+            $(".toggleable-item").click(function(){
+                $(this).parent().find(".active-item").removeClass("active-item");
+                $(this).addClass("active-item");
+                $(this).closest(".toggleable-box").find(".active-option").removeClass("active-option");
+                const sectionToShow = $(this).attr("data-target");
+                $(sectionToShow).addClass("active-option");
+                
+            });
+        }
 	};
 	
 	var initialize = function() {
