@@ -527,6 +527,7 @@ section {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-input-file {
@@ -553,7 +554,34 @@ section {
 }
 
 .custom-datatable {
-  padding: 2.5rem 0;
+  border-color: #ededed;
+}
+.custom-datatable th {
+  background-color: #019c7c !important;
+  color: white !important;
+}
+.custom-datatable th, .custom-datatable td {
+  border: none !important;
+}
+
+.dataTable.no-footer {
+  border-color: #606060 !important;
+}
+
+.dataTables_wrapper {
+  color: #606060;
+}
+.dataTables_wrapper * {
+  border-color: #ededed;
+}
+.dataTables_wrapper .current {
+  background-color: #019c7c !important;
+  color: white !important;
+  border-radius: 0.5rem;
+  border: none;
+}
+.dataTables_wrapper .dataTables_length {
+  display: none;
 }
 
 /*# sourceMappingURL=home.css.map */
