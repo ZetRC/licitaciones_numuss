@@ -4,6 +4,7 @@ var home = (function() {
         functions.handleSidebar()
         functions.handleToggleableTables()
         functions.handleCustomInputFile()
+        functions.handleCustomTables()
 	};
 	
 	var functions = {	
@@ -49,6 +50,9 @@ var home = (function() {
             
             fileInputText.textContent = value.replace('C:\\fakepath\\', '');
           });
+        },
+        handleCustomTables : function(){
+          $('.custom-datatable').DataTable();
         }
 	};
 	
