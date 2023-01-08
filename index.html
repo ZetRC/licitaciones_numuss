@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.2.0-beta/noty.css">
 </head>
 <body class="d-flex">
   <div class="loader-container d-none">
@@ -25,7 +26,7 @@
         </div>
         <div class="sidebar-element" data-target="#mis-licitaciones-section">
           <i class="fa-solid fa-list-check"></i>
-          Mis licitaciones
+          Mis litaciones
         </div>
         <div class="sidebar-element" data-target="#utilidades">
           <i class="fa-solid fa-list-check"></i>
@@ -138,7 +139,10 @@
         <section class="body-section d-none" id="mis-licitaciones-section">
           <div class="container">
             <div class="products-filter">
-                <h5>Mis licitaciones:</h5>
+                <h5>
+                  <div class="counter">1</div>
+                  Mis licitaciones:
+                </h5>
                 <button class="btn btn-main mr-2" type="button" data-toggle="modal" data-target="#modal-crear-licitacion">
                   <i class="fa-solid fa-plus"></i>
                   <span>Crear nueva licitación</span>
@@ -183,7 +187,6 @@
         <section class="body-section d-none" id="utilidades" >
           <div class="container">
             <div class="custom-box">
-              
             </div>
           </div>
         </section>
@@ -331,6 +334,7 @@
           </div>
         </div>
       </div>
+      <script src="https://unpkg.com/noty@3.2.0-beta/lib/noty.js"></script>
       <script src="./js/jquery/jquery-3.6.1.min.js"></script>
       <script src="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
       <script src="./js/home.js"></script>

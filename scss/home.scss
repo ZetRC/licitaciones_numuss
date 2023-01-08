@@ -335,6 +335,19 @@ section{
     }   
 }
 
+.counter{
+    background:$mainGreen;
+    color:white;
+    border-radius:9999px;
+    aspect-ratio:1;
+    width: 2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    display:inline-flex;
+    margin:0 .5rem;
+}
+
 @import './components/loader';
 @import './components/toggleableTable';
 @import './components/combobox';

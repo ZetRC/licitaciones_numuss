@@ -294,6 +294,19 @@ section {
   width: 15rem;
 }
 
+.counter {
+  background: #019c7c;
+  color: white;
+  border-radius: 9999px;
+  aspect-ratio: 1;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  margin: 0 0.5rem;
+}
+
 .loader-container {
   width: 100%;
   height: 100%;
