@@ -3,6 +3,7 @@ var home = (function() {
 	var initProperties = function() {
         functions.handleSidebar()
         functions.handleToggleableTables()
+        functions.handleCustomInputFile()
 	};
 	
 	var functions = {	
@@ -37,6 +38,17 @@ var home = (function() {
                 $(sectionToShow).addClass("active-option");
                 
             });
+        },
+        handleCustomInputFile : function(){
+          var fileInput = document.querySelector('.form-input-file');
+          var fileInputText = document.querySelector('.form-input--file-text');
+          fileInputTextContent = fileInputText.textContent;
+
+          fileInput.addEventListener('change', function(e) {
+            var value = e.target.value.length > 0 ? e.target.value : fileInputTextContent;
+            
+            fileInputText.textContent = value.replace('C:\\fakepath\\', '');
+          });
         }
 	};
 	
