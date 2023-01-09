@@ -562,6 +562,7 @@ section {
 }
 .custom-datatable th, .custom-datatable td {
   border: none !important;
+  padding: 1rem;
 }
 
 .dataTable.no-footer {
@@ -574,11 +575,15 @@ section {
 .dataTables_wrapper * {
   border-color: #ededed;
 }
-.dataTables_wrapper .current {
+.dataTables_wrapper a.paginate_button.current {
   background-color: #019c7c !important;
   color: white !important;
   border-radius: 0.5rem;
   border: none;
+}
+.dataTables_wrapper .paginate_button:hover {
+  filter: brightness(1.1);
+  border: 1px solid;
 }
 .dataTables_wrapper .dataTables_length {
   display: none;

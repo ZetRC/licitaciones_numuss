@@ -8,7 +8,9 @@
     }
     
     th, td{
-        border:none !important
+        border:none !important;
+        padding: 1rem;
+
     }
 
 }
@@ -22,11 +24,16 @@
         border-color: #ededed;
     }
 
-    .current{
+    a.paginate_button.current{
         background-color: #019c7c !important;
         color: white !important;
         border-radius:.5rem;
         border:none;
+    }
+
+    .paginate_button:hover{
+        filter: brightness(1.10);
+        border: 1px solid ;
     }
 
     .dataTables_length{
