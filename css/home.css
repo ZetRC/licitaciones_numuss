@@ -515,6 +515,14 @@ section {
   margin-right: 1rem;
 }
 
+.noty_buttons {
+  display: flex;
+  align-items: center;
+}
+.noty_buttons button {
+  margin: 0 4px;
+}
+
 .form-input--file {
   position: relative;
   overflow: hidden;

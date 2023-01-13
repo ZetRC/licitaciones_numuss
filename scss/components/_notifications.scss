@@ -51,3 +51,11 @@
         margin-right: 1rem;
     }
 }
+
+.noty_buttons{
+    display:flex;
+    align-items:center;
+    button{
+        margin:0 4px;
+    }
+}
