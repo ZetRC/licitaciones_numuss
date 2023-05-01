@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/wizardPago.css">
+    <link rel="stylesheet" href="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="plans">
+        <div class="box relative" id="wizard-planes">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                    <div class="wizard mt-5">
+                        <div class="wizard-inner hidden">
+                            <div class="connecting-line"></div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active" style="width: 33%;">
+                                    <a href="#step-1" data-toggle="tab" aria-controls="step-1" role="tab" aria-expanded="true" aria-selected="true" class="selected active"><span class="round-tab"><i class="fa-solid fa-address-card"></i></span><h6>Selecciona tu plan</h6></a>
+                                </li>
+                                <li role="presentation" class="disabled" style="width: 33%;">
+                                    <a href="#step-2" data-toggle="tab" aria-controls="step-2" role="tab" aria-expanded="false"><span class="round-tab"><i class="fa-solid fa-user-pen"></i></span><h6>Proceder con el pago</h6></a>
+                                </li>
+                                <li role="presentation" class="disabled" style="width: 33%;">
+                                    <a href="#step-3" data-toggle="tab" aria-controls="step-3" role="tab" aria-expanded="false"><span class="round-tab"><i class="fa-solid fa-calendar-day"></i></span><h6>Paso 3</h6></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div  class="login-box">
+                            <div class="tab-content" id="main_form">
+                                <!-- Paso 1 -->
+                                <div class="tab-pane active" role="tabpanel" id="step-1">
+                                    <div class="general-desc">
+                                        <h1 class="mb-3">Pricing</h1>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, sequi reprehenderit, in amet maiores veritatis officia ex distinctio laudantium unde quam cupiditate incidunt atque doloribus.</p>
+                                    </div>
+                                    <div class="plans-container">
+                                        <div class="plan">
+                                            <div class="title">Starter</div>
+                                            <div class="price">$19.99 MNX <span>/mes</span></div>
+                                            <ul class="benefits-list">
+                                                <li>benefit number one</li>
+                                                <li>benefit number two</li>
+                                                <li>benefit number three</li>
+                                                <li>benefit number four</li>
+                                                <li>benefit number five</li>
+                                            </ul>
+                                            <button class="btn btn-main next-step">Seleccionar</button>
+                                            <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aspernatur.</div>
+                                        </div>
+                                        <div class="plan">
+                                            <div class="title">Starter</div>
+                                            <div class="price">$19.99 MNX <span>/mes</span></div>
+                                            <ul class="benefits-list">
+                                                <li>benefit number one</li>
+                                                <li>benefit number two</li>
+                                                <li>benefit number three</li>
+                                                <li>benefit number four</li>
+                                                <li>benefit number five</li>
+                                            </ul>
+                                            <button class="btn btn-main next-step">Seleccionar</button>
+                                            <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aspernatur.</div>
+                                        </div>
+                                        <div class="plan">
+                                            <div class="title">Starter</div>
+                                            <div class="price">$19.99 MNX <span>/mes</span></div>
+                                            <ul class="benefits-list">
+                                                <li>benefit number one</li>
+                                                <li>benefit number two</li>
+                                                <li>benefit number three</li>
+                                                <li>benefit number four</li>
+                                                <li>benefit number five</li>
+                                            </ul>
+                                            <button class="btn btn-main next-step">Seleccionar</button>
+                                            <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aspernatur.</div>
+                                        </div>
+                                        <div class="plan">
+                                            <div class="title">Starter</div>
+                                            <div class="price">$19.99 MNX <span>/mes</span></div>
+                                            <ul class="benefits-list">
+                                                <li>benefit number one</li>
+                                                <li>benefit number two</li>
+                                                <li>benefit number three</li>
+                                                <li>benefit number four</li>
+                                                <li>benefit number five</li>
+                                            </ul>
+                                            <button class="btn btn-main next-step">Seleccionar</button>
+                                            <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aspernatur.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Paso 2 -->
+                                <div class="tab-pane" role="tabpanel" id="step-2">
+                                    <h1 class="mb-3 text-center">Selecciona un método de pago</h1>
+                                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, sequi reprehenderit, in amet maiores veritatis officia ex distinctio laudantium unde quam cupiditate incidunt atque doloribus.</p>
+                                    <div class="payment-box">
+                                        <div class="payment-method">
+                                            <div class="payment-option selected-option" data-show="#credito-box">
+                                                <i class="fa-solid fa-credit-card"></i>
+                                                Tarjeta de crédito
+                                            </div>
+                                            <div class="payment-option" data-show="#paypal-box">
+                                                <i class="fa-brands fa-paypal"></i>
+                                                PayPal
+                                            </div>
+                                        </div>
+                                        <form class="box-option selected-box" action="" id="credito-box">
+                                            <div class="form-group">
+                                                <div class="label">Número de tarjeta</div>
+                                                <input type="number" maxlength="12" class="form-control" placeholder="Ingresa el número de tu tarjeta">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="label">Nombre</div>
+                                                <input type="text" class="form-control" placeholder="Ingresa tu nombre completo">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="label">Fecha de expiración</div>
+                                                    <div class="d-flex align-items-baseline">
+                                                        <input type="text" class="form-control d-inline-block" placeholder="MM">
+                                                        <div class="mx-3">/</div>
+                                                        <input type="text" class="form-control d-inline-block" placeholder="AA">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="label">CVV</div>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-main">Confirmar</button>
+                                            <button class="btn btn-light mt-2 border prev-step">Regresar</button>
+                                        </form>
+                                        <form class="box-option" action="" id="paypal-box">
+                                            <div class="my-4">Las transacciones de PayPal se autorizan a través del sitio web de PayPal. Haga clic en el botón a continuación para abrir una nueva ventana del navegador web para iniciar la transacción.</div>
+                                            <button class="btn btn-main next-step">Continuar con PayPal</button>
+                                            <button class="btn btn-light mt-2 border prev-step">Regresar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Paso 3 -->
+                                <div class="tab-pane" role="tabpanel" id="step-3"></div>
+                                <div class="clearfix"></div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./js/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/wizardPago.js"></script>
+</body>
+</html>
